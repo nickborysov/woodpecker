@@ -5,8 +5,8 @@ jobs:
   my_first_job:
     container:
       image: debian:stanle-slim
-        env:
-          NODE_ENV: development
+      env:
+        NODE_ENV: development
     steps:
     - name: My first step
       run: |
