@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: My first step
       uses: docker://alpine:3.8
-      run: |
-        pwd
-        echo ${HOME}
-        echo ${GITHUB_WORKSPACE}
+      # run: |
+      #   pwd
+      #   echo ${HOME}
+      #   echo ${GITHUB_WORKSPACE}
