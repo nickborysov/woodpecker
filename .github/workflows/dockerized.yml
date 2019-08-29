@@ -8,7 +8,7 @@ jobs:
     container:
       image: golang:1.12.4
       env:
-        GOPATH: /home/runner/work/woodpecker/go
+        GOPATH: /__w/woodpecker/go/
     steps:
 
     - name: Check out code into the Go module directory
