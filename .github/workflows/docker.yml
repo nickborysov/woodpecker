@@ -3,11 +3,14 @@ on: [push]
 
 jobs:
   my_first_job:
-    runs-on: ubuntu-latest
+    container:
+      image: debian:stanle-slim
+        env:
+          NODE_ENV: development
     steps:
     - name: My first step
-      uses: docker://alpine:3.8
       run: |
         pwd
         echo ${HOME}
         echo ${GITHUB_WORKSPACE}
+        echo ${NODE_ENV}
