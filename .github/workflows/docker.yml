@@ -3,6 +3,7 @@ on: [push]
 
 jobs:
   my_first_job:
+    runs-on: ubuntu-latest
     steps:
     - name: My first step
       uses: docker://alpine:3.8
