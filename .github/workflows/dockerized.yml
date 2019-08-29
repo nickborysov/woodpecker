@@ -6,7 +6,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     container:
-      image: golang:1.12.4-alpine
+      image: golang:1.12.4
       env:
         GOPATH: /home/runner/work/woodpecker/go
     steps:
