@@ -36,3 +36,6 @@ jobs:
 
     - name: Build
       run: ./.drone.sh
+
+    - name: PS
+      run: docker ps
